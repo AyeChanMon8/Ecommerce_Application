@@ -13,7 +13,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    String dropdownValue = 'Dog';
+    String dropdownValue = '48th street Botahtaung';
     return Scaffold(
       backgroundColor: homebgColor,
       appBar: AppBar(
@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 isDense: true,
                 underline: Container(color: Colors.transparent),
                 // Step 4.
-                items: <String>['Dog', 'Cat', 'Tiger', 'Lion']
+                items: <String>['48th street Botahtaung', '50th street Botahtaung']
                     .map<DropdownMenuItem<String>>((String value) {
                   return DropdownMenuItem<String>(
                     value: value,
