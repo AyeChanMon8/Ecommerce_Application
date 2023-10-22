@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../core/router_name.dart';
 import '../../utils/constants.dart';
+import 'component/home_banner.dart';
+import 'component/search_component.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -68,7 +70,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ))
           ]),
       body: CustomScrollView(
-        slivers: [],
+        slivers: [
+          SliverToBoxAdapter(child: SearchComponent()),
+          SliverToBoxAdapter(child: HomeBanner()),
+        ],
       ),
     );
   }
